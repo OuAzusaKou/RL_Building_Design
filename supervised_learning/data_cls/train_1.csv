@@ -1,0 +1,6 @@
+,room1,room2,room3,room4,room5,boundary
+room1_,-1,2,1,2,2,6
+room2_,2,-1,1,1,2,6
+room3_,1,1,-1,2,2,6
+room4_,2,1,2,-1,2,6
+room5_,2,2,2,2,-1,6
