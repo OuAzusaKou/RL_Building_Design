@@ -135,7 +135,6 @@ class GEN_MLP(nn.Module):
 
       output[:, i*4 + 3] = (x_identical[:, 30 + i * 4 + 2] + x_identical[:, 30 + i * 4 + 3]) / 2 + \
                            (x_identical[:, 30 + i * 4 + 3] - x_identical[:, 30 + i * 4 + 2]) / 2 * output_[:, i*4 + 3]
-
     #output = self.relu(x)
 
 

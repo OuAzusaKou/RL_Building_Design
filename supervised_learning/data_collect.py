@@ -19,7 +19,7 @@ def data_write2():
 #data_write2()
 def data_write_limit(limit,grid_size):
 
-    csv_filepath_train = './data_cls/limit_1.csv'
+    csv_filepath_train = './data_cls/limit_6.csv'
 
     writer_train = csv.writer(open(csv_filepath_train, 'w'))
     writer_train.writerow(['limit', 'grid_size'])
@@ -29,7 +29,7 @@ def data_write_limit(limit,grid_size):
 
 limit = np.zeros((5,4))
 
-limit[0] = np.array([36, 42, 42, 54])
+limit[0] = np.array([36, 45, 42, 54])
 
 limit[1] = np.array([26, 42, 42, 54])
 

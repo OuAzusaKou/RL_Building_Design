@@ -13,9 +13,9 @@ ROOM_NAMES = [
 ]
 
 MATRIX_TARGET = [
-    [-1,2,1,2,2,6],
+    [-1,2,2,2,2,6],
     [2,-1,1,1,2,6],
-    [1,1,-1,2,2,6],
+    [2,1,-1,2,2,6],
     [2,1,2,-1,2,6],
     [2,2,2,2,-1,6]
 ]
@@ -26,8 +26,8 @@ for i in ROOM_NAMES[:6]:
     lis.append(new_name)
 
 RELATION_TARGET = pd.DataFrame(MATRIX_TARGET, columns = ROOM_NAMES[:6], index = lis[:5])
-#RELATION_TARGET.to_csv('../supervised_learning/data_cls/'+'train_1.csv')
-#RELATION_TARGET = pd.read_csv('../supervised_learning/data_cls/'+'train_1.csv',index_col=0)
+RELATION_TARGET.to_csv('../supervised_learning/data_cls/'+'train_6.csv')
+RELATION_TARGET = pd.read_csv('../supervised_learning/data_cls/'+'train_6.csv',index_col=0)
 print(RELATION_TARGET)
 
 
@@ -331,6 +331,6 @@ class Discrete5_Move_DQN_Env(gym.Env):
         return
 
 
-env = Discrete5_Move_DQN_Env()
+#env = Discrete5_Move_DQN_Env()
 # It will check your custom environment and output additional warnings if needed
-check_env(env)
+#check_env(env)
